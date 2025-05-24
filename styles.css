@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Chakra Petch', sans-serif;
+  background: linear-gradient(135deg, #1c6bb6, #158dc4);
+  color: rgb(28, 107, 182);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: white;
+  border-bottom: 2px solid rgb(115, 170, 221);
+  padding: 20px 30px;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(28, 107, 182);
+  text-align: center;
+  user-select: none;
+  box-shadow: 0 2px 6px rgb(115 170 221 / 0.5);
+}
+
+main {
+  flex: 1;
+  max-width: 960px;
+  margin: 40px auto 80px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgb(28 107 182 / 0.2);
+  color: rgb(28, 107, 182);
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.intro-image img {
+  width: 300px;
+  border: 2px solid rgb(84, 150, 212);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(28 107 182 / 0.4);
+}
+
+section {
+  margin-top: 50px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(115, 170, 221);
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(28, 107, 182);
+  max-width: 720px;
+}
+
+.features-list {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.feature-item {
+  background: rgb(224 237 255);
+  border: 2px solid rgb(115, 170, 221);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+}
+
+.feature-item:hover {
+  border-color: #eb0001;
+  background-color: #ffdada;
+}
+
+.feature-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.feature-desc {
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgb(28, 107, 182);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: white;
+  border-top: 2px solid rgb(115, 170, 221);
+  font-size: 14px;
+  color: rgb(28, 107, 182);
+  user-select: none;
+}
+
+footer a {
+  color: rgb(28, 107, 182);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #eb0001;
+}
+
+/* Responsividade simples */
+@media (max-width: 720px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-image img {
+    width: 80%;
+  }
+  .features-list {
+    justify-content: center;
+  }
+  .feature-item {
+    width: 90%;
+  }
+}
